@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun Math Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+<h1>Fun Math Quiz</h1>
+<p class="subtitle">Answer at least 3 questions correctly to unlock the video!</p>
+
+<form id="quizForm">
+
+<div class="question">
+<p>1. What is the sum of the first three even numbers?</p>
+<label><input type="radio" name="q1" value="6"> 6</label>
+<label><input type="radio" name="q1" value="10"> 10</label>
+<label><input type="radio" name="q1" value="12"> 12</label>
+</div>
+
+<div class="question">
+<p>2. A square has 4 sides. If we draw a diagonal line inside the square, how many triangles are formed?</p>
+<label><input type="radio" name="q2" value="2"> 2</label>
+<label><input type="radio" name="q2" value="3"> 3</label>
+<label><input type="radio" name="q2" value="4"> 4</label>
+</div>
+
+<div class="question">
+<p>3. What is the value of 5 × 0 × 7 × 10?</p>
+<label><input type="radio" name="q3" value="0"> 0</label>
+<label><input type="radio" name="q3" value="50"> 50</label>
+<label><input type="radio" name="q3" value="350"> 350</label>
+</div>
+
+<div class="question">
+<p>4. I am a number. When you add me to myself, the answer becomes 10. What number am I?</p>
+<label><input type="radio" name="q4" value="4"> 4</label>
+<label><input type="radio" name="q4" value="5"> 5</label>
+<label><input type="radio" name="q4" value="6"> 6</label>
+</div>
+
+<div class="question">
+<p>5. What is half of 100?</p>
+<label><input type="radio" name="q5" value="25"> 25</label>
+<label><input type="radio" name="q5" value="50"> 50</label>
+<label><input type="radio" name="q5" value="75"> 75</label>
+</div>
+
+<button type="button" onclick="checkQuiz()">Submit Quiz</button>
+
+</form>
+
+<div id="result"></div>
+
+<div id="retrySection" style="display:none;">
+<button onclick="retryQuiz()">Retry Quiz</button>
+</div>
+
+<div id="videoSection" style="display:none;">
+<video id="successVideo" autoplay muted playsinline>
+<source src="video/success.mp4" type="video/mp4">
+</video>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
